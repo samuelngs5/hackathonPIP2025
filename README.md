@@ -30,7 +30,7 @@ Dépendances minimales :
 - `matplotlib`
 
 Installation via pip (si nécessaire) :
-```bash
+
 pip install numpy matplotlib
 
 
@@ -38,7 +38,7 @@ pip install numpy matplotlib
 Le script principal de simulation est `run_experiments.py`.
 
 Pour lancer l’ensemble des expériences :
-```bash
+
 python run_experiments.py
 
 
@@ -53,7 +53,7 @@ Les résultats sont affichés :
 	•	sous forme de figures Matplotlib,
 	•	sous forme de tableaux récapitulatifs imprimés dans la console.
 
-Paramètres de simulation
+## Paramètres de simulation
 
 Les paramètres principaux sont définis dans run_experiments.py et env_munitions.py :
 	•	Horizon de simulation : total_steps = 2000 (interprété comme 2000 jours),
@@ -64,7 +64,7 @@ Les paramètres principaux sont définis dans run_experiments.py et env_munition
 Les hypothèses économiques (prix unitaire, coûts d’arrêt, maintenance, congestion) sont définies dans :
 	•	economic_evaluation.py
 
-Reproductibilité
+## Reproductibilité
 
 Les résultats du projet sont entièrement reproductibles :
 	•	les graines aléatoires sont fixées,
@@ -74,7 +74,7 @@ Les résultats du projet sont entièrement reproductibles :
 Relancer run_experiments.py avec les mêmes paramètres permet de retrouver les mêmes figures et tableaux.
 
 
-Auteur
+## Auteur
 
-Projet réalisé individuellement par Samuel Ngs.
+Projet réalisé individuellement par Samuel Ngassam Mbandou.
 L’ensemble des aspects du projet (modélisation, implémentation, simulation, analyse) a été pris en charge par un seul auteur.
