@@ -1,4 +1,4 @@
-# hackathonPIP2025
+# HackathonPIP2025-Alten AMJE
 Simulation, jumeau numérique probabiliste et aide à la décision pour une ligne de production sous contraintes (contexte défense).
 
 ## Objectif du projet
