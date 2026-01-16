@@ -53,6 +53,8 @@ python src/run_experiments.py
 ```
 
 Ce script exécute automatiquement :
+
+```text
 	1.	l’initialisation de l’environnement de production (ligne de machines),
 	2.	la génération de plusieurs scénarios de cadence (faible constante, élevée constante, pics, montée en cadence),
 	3.	l’exécution de différentes politiques de décision (approche standard vs jumeau numérique),
@@ -62,6 +64,7 @@ Ce script exécute automatiquement :
 Les résultats sont affichés :
 	•	sous forme de figures Matplotlib,
 	•	sous forme de tableaux récapitulatifs imprimés dans la console.
+```
 
 ## Paramètres de simulation
 
