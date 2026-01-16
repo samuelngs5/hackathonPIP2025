@@ -9,7 +9,7 @@ Ce dépôt contient une implémentation complète permettant :
 - de produire une **évaluation économique** (unités produites, revenus, coûts d’arrêt/panne, maintenance, congestion, solde net).
 
 Les résultats sont **reproductibles** grâce à l’utilisation de graines aléatoires (`seed`) et de paramètres explicites.
-![Structure du système](illustration/architectures2.png)
+![Structure du système](illustration/architecture2.png)
 
 ## Structure du dépôt
 Principaux fichiers :
