@@ -15,10 +15,10 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 
 
 hackathonPIP2025/
-	src/
-		run_experiments.py
-		env_munitions.py
-		scenarios.py
+src/
+run_experiments.py
+env_munitions.py
+scenarios.py
 		twin_kalman.py
 		policies.py
 		bandit.py
