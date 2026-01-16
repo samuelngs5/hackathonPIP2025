@@ -12,18 +12,19 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 ![Structure du système](illustration/architecture2.png)
 
 ## Structure du dépôt
+## Structure du dépôt
 
-  hackathonPIP2025/
-│
+```text
+hackathonPIP2025/
 ├── src/
 │   ├── run_experiments.py        # Script principal de lancement des simulations
 │   ├── env_munitions.py          # Environnement de simulation de la ligne de production
 │   ├── scenarios.py              # Scénarios de cadence (low_const, high_const, spikes, ramp)
 │   ├── twin_kalman.py             # Jumeau numérique probabiliste (modèle d’état + filtre de Kalman)
-│   ├── policies.py                # Stratégies de décision (heuristique, bandits obs-only, bandits avec jumeau)
-│   ├── bandit.py                  # Briques génériques de bandits (Thompson Sampling, UCB, etc.)
-│   ├── economic_evaluation.py     # Évaluation économique (revenus, coûts, indicateurs agrégés)
-│   └── viz.py                     # Visualisations (courbes de récompense, comparaisons, figures)
+│   ├── policies.py                # Stratégies de décision
+│   ├── bandit.py                  # Briques génériques de bandits (TS, UCB, etc.)
+│   ├── economic_evaluation.py     # Évaluation économique (revenus, coûts)
+│   └── viz.py                     # Visualisations
 │
 ├── illustration/
 │   └── *.png                      # Figures utilisées dans le README ou le rapport
