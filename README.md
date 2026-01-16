@@ -12,20 +12,22 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 ![Structure du système](illustration/architecture2.png)
 
 ## Structure du dépôt
+
+
 hackathonPIP2025/
-├── src/
-│   ├── run_experiments.py
-│   ├── env_munitions.py
-│   ├── scenarios.py
-│   ├── twin_kalman.py
-│   ├── policies.py
-│   ├── bandit.py
-│   ├── economic_evaluation.py
-│   └── viz.py
-├── illustration/
-│   └── *.png
-├── README.md
-└── .gitignore
+	src/
+		run_experiments.py
+		env_munitions.py
+		scenarios.py
+		twin_kalman.py
+		policies.py
+		bandit.py
+		economic_evaluation.py
+		viz.py
+	illustration/
+		*.png
+	README.md
+	.gitignore
 
 
 
