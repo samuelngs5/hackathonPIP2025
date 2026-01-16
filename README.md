@@ -54,39 +54,38 @@ python src/run_experiments.py
 
 Ce script exécute automatiquement :
 
-```text
-	1.	l’initialisation de l’environnement de production (ligne de machines),
-	2.	la génération de plusieurs scénarios de cadence (faible constante, élevée constante, pics, montée en cadence),
-	3.	l’exécution de différentes politiques de décision (approche standard vs jumeau numérique),
-	4.	la génération de figures comparatives (évolution de la fonction coût),
-	5.	le calcul d’un bilan économique agrégé (unités produites, revenus, coûts et solde net).
+
+	-	l’initialisation de l’environnement de production (ligne de machines),
+	-	la génération de plusieurs scénarios de cadence (faible constante, élevée constante, pics, montée en cadence),
+	-	l’exécution de différentes politiques de décision (approche standard vs jumeau numérique),
+	-	la génération de figures comparatives (évolution de la fonction coût),
+	-	le calcul d’un bilan économique agrégé (unités produites, revenus, coûts et solde net).
 
 Les résultats sont affichés :
-	•	sous forme de figures Matplotlib,
-	•	sous forme de tableaux récapitulatifs imprimés dans la console.
-```
+	-	sous forme de figures Matplotlib,
+	-	sous forme de tableaux récapitulatifs imprimés dans la console.
+
 
 ## Paramètres de simulation
 
 Les paramètres principaux sont définis dans run_experiments.py et env_munitions.py :
-```text
-	•	Horizon de simulation : total_steps = 2000 (interprété comme 2000 jours),
-	•	Nombre de machines : défini dans EnvParams,
-	•	Mode de reward : reward_mode = "classic",
-	•	Graines aléatoires (seed) fixées pour assurer la reproductibilité.
-```
+
+	-	Horizon de simulation : total_steps = 2000 (interprété comme 2000 jours),
+	-	Nombre de machines : défini dans EnvParams,
+	-	Mode de reward : reward_mode = "classic",
+	-	Graines aléatoires (seed) fixées pour assurer la reproductibilité.
+
 Les hypothèses économiques (prix unitaire, coûts d’arrêt, maintenance, congestion) sont définies dans :
-	•	economic_evaluation.py
+	-	economic_evaluation.py
 
 ## Reproductibilité
 
 Les résultats du projet sont entièrement reproductibles :
 
-```text
-	•	les graines aléatoires sont fixées,
-	•	les scénarios de demande sont déterministes,
-	•	les paramètres de simulation et de coûts sont explicitement codés.
-```
+	-	les graines aléatoires sont fixées,
+	-	les scénarios de demande sont déterministes,
+	-	les paramètres de simulation et de coûts sont explicitement codés.
+
 Relancer run_experiments.py avec les mêmes paramètres permet de retrouver les mêmes figures et tableaux.
 
 
