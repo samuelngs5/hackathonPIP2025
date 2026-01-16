@@ -29,7 +29,6 @@ hackathonPIP2025/
 
 
 
-
 ## Installation (rapide)
 Prérequis :
 - Python >= 3.9
