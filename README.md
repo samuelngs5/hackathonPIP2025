@@ -69,21 +69,24 @@ Les résultats sont affichés :
 ## Paramètres de simulation
 
 Les paramètres principaux sont définis dans run_experiments.py et env_munitions.py :
+```text
 	•	Horizon de simulation : total_steps = 2000 (interprété comme 2000 jours),
 	•	Nombre de machines : défini dans EnvParams,
 	•	Mode de reward : reward_mode = "classic",
 	•	Graines aléatoires (seed) fixées pour assurer la reproductibilité.
-
+```
 Les hypothèses économiques (prix unitaire, coûts d’arrêt, maintenance, congestion) sont définies dans :
 	•	economic_evaluation.py
 
 ## Reproductibilité
 
 Les résultats du projet sont entièrement reproductibles :
+
+```text
 	•	les graines aléatoires sont fixées,
 	•	les scénarios de demande sont déterministes,
 	•	les paramètres de simulation et de coûts sont explicitement codés.
-
+```
 Relancer run_experiments.py avec les mêmes paramètres permet de retrouver les mêmes figures et tableaux.
 
 
