@@ -13,21 +13,23 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 
 ## Structure du dépôt
 
-
 hackathonPIP2025/
-├── src/
-│   ├── run_experiments.py
-│   ├── env_munitions.py
-│   ├── scenarios.py
-│   ├── twin_kalman.py
-│   ├── policies.py
-│   ├── bandit.py
-│   ├── economic_evaluation.py
-│   └── viz.py
-├── illustration/
-│   └── *.png
-├── README.md
-└── .gitignore
+src/
+run_experiments.py        # Script principal de lancement des simulations
+env_munitions.py          # Environnement de simulation de la ligne de production
+scenarios.py              # Scénarios de cadence (low_const, high_const, spikes, ramp)
+twin_kalman.py             # Jumeau numérique probabiliste (modèle d’état + filtre de Kalman)
+policies.py                # Stratégies de décision
+bandit.py                  # Briques génériques de bandits (TS, UCB, etc.)
+economic_evaluation.py     # Évaluation économique (revenus, coûts)
+viz.py                     # Visualisations
+illustration/
+*.png                      # Figures utilisées dans le README ou le rapport
+README.md                      # Description du projet et instructions d’exécution
+.gitignore
+
+
+
 
 ## Installation (rapide)
 Prérequis :
