@@ -12,21 +12,30 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 ![Structure du système](illustration/architecture2.png)
 
 ## Structure du dépôt
-Principaux fichiers :
-- `run_experiments.py` : script principal de lancement des simulations (scénarios + policies + plots + bilan économique)
-- `env_munitions.py` : environnement de simulation de la ligne de production
-- `scenarios.py` : définition des scénarios de cadence (ex. low_const, high_const, spikes, ramp)
-- `twin_kalman.py` : jumeau numérique probabiliste (modèle linéaire + filtre de Kalman)
-- `policies.py` : stratégies de décision (heuristique, bandits obs-only, bandits avec jumeau, etc.)
-- `bandit.py` : briques génériques de bandits (TS/UCB, etc.)
-- `economic_evaluation.py` : calcul des métriques économiques agrégées (revenus et coûts)
-- `viz.py` : visualisations (courbes de récompense, comparaisons, etc.)
+
+  hackathonPIP2025/
+│
+├── src/
+│   ├── run_experiments.py        # Script principal de lancement des simulations
+│   ├── env_munitions.py          # Environnement de simulation de la ligne de production
+│   ├── scenarios.py              # Scénarios de cadence (low_const, high_const, spikes, ramp)
+│   ├── twin_kalman.py             # Jumeau numérique probabiliste (modèle d’état + filtre de Kalman)
+│   ├── policies.py                # Stratégies de décision (heuristique, bandits obs-only, bandits avec jumeau)
+│   ├── bandit.py                  # Briques génériques de bandits (Thompson Sampling, UCB, etc.)
+│   ├── economic_evaluation.py     # Évaluation économique (revenus, coûts, indicateurs agrégés)
+│   └── viz.py                     # Visualisations (courbes de récompense, comparaisons, figures)
+│
+├── illustration/
+│   └── *.png                      # Figures utilisées dans le README ou le rapport
+│
+├── README.md                      # Description du projet et instructions d’exécution
+└── .gitignore
 
 ## Installation (rapide)
 Prérequis :
 - Python >= 3.9
 
-Dépendances minimales :
+Dépendances minimales : `$
 - `numpy`
 - `matplotlib`
 
@@ -78,4 +87,4 @@ Relancer run_experiments.py avec les mêmes paramètres permet de retrouver les 
 ## Auteur
 
 Projet réalisé individuellement par Samuel Ngassam Mbandou.
-L’ensemble des aspects du projet (modélisation, implémentation, simulation, analyse) a été pris en charge par un seul auteur.
+L’ensemble des aspects du projet (modélisation, implémentation, simulation, analyse) a été pris en charge.
