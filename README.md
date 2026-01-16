@@ -13,20 +13,40 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 
 ## Structure du dépôt
 hackathonPIP2025/
-src/
-run_experiments.py        
-env_munitions.py          
-scenarios.py             
-twin_kalman.py             # Jumeau numérique probabiliste (modèle d’état + filtre de Kalman)
-policies.py                # Stratégies de décision
-bandit.py                  # Briques génériques de bandits (TS, UCB, etc.)
-economic_evaluation.py     # Évaluation économique (revenus, coûts)
-viz.py                     # Visualisations
-illustration/
-*.png                      # Figures utilisées dans le README ou le rapport
-README.md                      # Description du projet et instructions d’exécution
-.gitignore
+├── src/
+│   ├── run_experiments.py
+│   ├── env_munitions.py
+│   ├── scenarios.py
+│   ├── twin_kalman.py
+│   ├── policies.py
+│   ├── bandit.py
+│   ├── economic_evaluation.py
+│   └── viz.py
+├── illustration/
+│   └── *.png
+├── README.md
+└── .gitignore
 
+Principaux fichiers du dépôt :
+	•	run_experiments.py
+Script principal de lancement des simulations (scénarios, politiques, visualisations, évaluation économique).
+	•	env_munitions.py
+Environnement de simulation de la ligne de production (machines, santé, congestion, maintenance).
+	•	scenarios.py
+Définition des scénarios de cadence de demande.
+	•	twin_kalman.py
+Jumeau numérique probabiliste (modèle linéaire en espace d’état + filtre de Kalman).
+	•	policies.py
+Stratégies de décision :
+	•	heuristique,
+	•	bandits à observations seules,
+	•	bandits intégrant le jumeau numérique.
+	•	bandit.py
+Briques génériques pour les algorithmes de bandits (Thompson Sampling, UCB, etc.).
+	•	economic_evaluation.py
+Calcul des indicateurs économiques agrégés (unités produites, revenus, coûts).
+	•	viz.py
+Fonctions de visualisation (comparaisons, courbes de récompense cumulée).
 
 
 
