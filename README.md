@@ -40,17 +40,17 @@ Dépendances minimales : `$
 - `matplotlib`
 
 Installation via pip (si nécessaire) :
-
+```bash
 pip install numpy matplotlib
-
+```
 
 ## Lancer les simulations
 Le script principal de simulation est `run_experiments.py`.
 
-Pour lancer l’ensemble des expériences :
-
-python run_experiments.py
-
+Pour lancer l’ensemble des expériences à partir du dossier parent:
+```bash
+python src/run_experiments.py
+```
 
 Ce script exécute automatiquement :
 	1.	l’initialisation de l’environnement de production (ligne de machines),
