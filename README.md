@@ -12,9 +12,9 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 ![Structure du système](illustration/architecture2.png)
 
 ## Structure du dépôt
-## Structure du dépôt
 
-```text
+
+'''text
 hackathonPIP2025/
 ├── src/
 │   ├── run_experiments.py        # Script principal de lancement des simulations
