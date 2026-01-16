@@ -13,7 +13,7 @@ Les résultats sont **reproductibles** grâce à l’utilisation de graines alé
 
 ## Structure du dépôt
 
-
+```text
 hackathonPIP2025/
 src/
 run_experiments.py
@@ -29,7 +29,7 @@ scenarios.py
 	README.md
 	.gitignore
 
-
+```
 
 ## Installation (rapide)
 Prérequis :
