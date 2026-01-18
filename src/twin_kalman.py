@@ -47,7 +47,7 @@ def build_linear_twin(n_machines: int = 3):
     State x = [h1..hN, c1..cN] (2N)
     Observation y = [throughput, WIP, downtime] (3)
 
-    Very simple linear-ish twin:
+    linear-ish twin:
       health drifts down with cadence, congestion drifts up with cadence and down with maintenance.
     Control u = [effective_cadence, maintenance_flag]
     """
