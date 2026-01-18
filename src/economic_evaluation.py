@@ -1,11 +1,6 @@
 import numpy as np
 
-DEFAULT_COSTS = {
-    "unit_value": 5000,          # € / obus 155 mm
-    "maintenance": 40000,        # € / maintenance
-    "downtime_per_day": 200000,  # € / jour d'arrêt
-    "wip_per_unit_day": 50       # € / unité WIP / jour
-}
+
 
 def evaluate_economic_metrics(run: dict) -> dict:
     """
