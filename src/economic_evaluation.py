@@ -9,7 +9,7 @@ DEFAULT_COSTS = {
 
 def evaluate_economic_metrics(run: dict) -> dict:
     """
-    Évaluation économique a posteriori (approche consultant).
+    Évaluation économique a posteriori .
     Les coûts sont exprimés en euros.
     """
 
