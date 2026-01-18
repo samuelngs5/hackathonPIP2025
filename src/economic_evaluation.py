@@ -20,7 +20,7 @@ def evaluate_economic_metrics(run: dict) -> dict:
     COST_WIP_UNIT = 500.0           # € / unité WIP / jour
 
     UNITS_TO_SHELLS = 1000  # facteur industriel
-    PRICE_PER_SHELL = 3000  # € / obus (ordre de grandeur réaliste)
+    PRICE_PER_SHELL = 3000  # € / obus 
 
     produced_units = np.sum(run["throughput"])*UNITS_TO_SHELLS
     downtime_days = np.sum(run["downtime"])
